@@ -1,0 +1,132 @@
+/* Global & Common CSS */
+body {
+    display: flex;
+    background-color: #000;
+}
+
+.center-alignment {
+    justify-content: center;
+    align-items: center;
+}
+
+.abs-position {
+    position: absolute;
+}
+
+/* Instagram Outer Wrapper */
+.instagram-wrapper {
+    display: flex;
+	position: relative;
+    width: 600px;
+    height: 600px;
+    font-size: 150vmin;
+    background-color: #3c3c3c;
+}
+
+/* Instagram inner cover */
+.instagram-cover {
+    position: relative;
+    width: 0.9em;
+    height: 0.9em;
+    font-size: 50vmin;
+    background-color: #ded1c1;
+    border-radius: 22.3%;
+}
+
+/* Flash view CSS*/
+.flash {
+    width: 0.08em;
+    top: 12%;
+    left: 12%;
+    border-radius: 50%;
+    height: 0.08em;
+    background: #FF8873;
+}
+
+/* Top right view CSS */
+.view {
+    top: 0.08em;
+    right: 0.1em;
+    width: 0.16em;
+    height: 0.12em;
+    background-color: #2E3E4F;
+    border-radius: 45%;
+    box-shadow: #838383 0px 4px 2px;
+}
+
+/* Middle broad strip CSS */
+.strip {
+    top: 35%;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-color: #54B59A ;
+    border-top: 10px solid #479A83;
+    border-bottom: 10px solid #479A83;
+}
+
+.strip::before {
+	width: 0.4em;
+    height: 0.4em;
+    background-color: #111;
+    border: 0.05em solid #B44B37;
+    box-shadow: 0 0.019em #888888;
+}
+
+.strip::before, 
+.strip::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
+    content: "";
+}
+
+/* Inner lens */
+.inner-lens {
+    left: 0.3em;
+    top: -0.035em;
+    border-radius: 50%;
+    width: 0.3em;
+    height: 0.3em;
+    background-color: #3C3C3C;
+}
+
+.inner-lens:before {
+    z-index: 9;
+    width: 0.2em;
+    height: 0.2em;
+    background-color: #111111;
+    box-shadow: inset 0 0 0 0.04em #222222;
+}
+
+.inner-lens::before, 
+.inner-lens::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
+    content: "";
+}
+
+.inner-lens::after {
+    z-index: 9;
+    width: 0.025em;
+    height: 0.025em;
+    background-color: #838383;
+}
+
+/* Instagram Shadow */
+.insta-shadow {
+    bottom: 4rem;
+    background: #222222;
+    border-radius: 50%;
+    width: 0.25em;
+    height: 0.025em;
+}
